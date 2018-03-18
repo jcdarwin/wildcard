@@ -35,3 +35,8 @@ The cert should be visible in the `Certificates` category in the `login` keychai
 4. When prompted, enter your password again and click `Update Settings`
 
 5. Close `Keychain Access`
+
+
+## Further reading
+
+* https://gist.github.com/jed/6147872
