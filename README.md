@@ -36,6 +36,11 @@ The cert should be visible in the `Certificates` category in the `login` keychai
 
 5. Close `Keychain Access`
 
+## Convert crt / key to pem
+
+		openssl x509 -in example.com.crt -out example.com.crt.pem -outform pem
+
+		openssl rsa -in example.com.key -out example.com.key.pem -outform pem
 
 ## Further reading
 
