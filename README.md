@@ -22,6 +22,12 @@ The contents of the cert can be checked with `openssl`:
 
 As our cert is self-signed, we need to add it to Keychain Access and tell Mac OS that it can trust it.
 
+Presuming you're on a Mac, this can be done at the command line using a command such as the following:
+
+	sudo security add-trusted-cert -d  -k /Library/Keychains/System.keychain ./certs/example.com.crt
+
+Or, if you'd like to do it the long way:
+
 	open /Applications/Utilities/Keychain\ Access.app ./certs/example.com.crt
 
 The cert should be visible in the `Certificates` category in the `login` keychain.
@@ -35,6 +41,7 @@ The cert should be visible in the `Certificates` category in the `login` keychai
 4. When prompted, enter your password again and click `Update Settings`
 
 5. Close `Keychain Access`
+
 
 ## Convert crt / key to pem
 
