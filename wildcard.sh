@@ -42,6 +42,7 @@ openssl req -new -key "certs/$DOMAIN".key -out "certs/$DOMAIN".csr -config "$Ope
 
 # Create Certifcate
 openssl x509 -req -days 3650 -in "certs/$DOMAIN".csr \
+-sha512 \
 -signkey "certs/$DOMAIN".key -out "certs/$DOMAIN".crt \
 -extensions v3_req \
 -extfile "$OpenSSLConf"
