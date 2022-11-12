@@ -17,6 +17,8 @@ The contents of the cert can be checked with `openssl`:
 
 	openssl x509 -in certs/example.com.crt -text -noout
 
+	// Check just the signature algorithm - should be sha512WithRSAEncryption
+	openssl x509 -text -in certs/example.com.crt | grep Signature
 
 ## Adding to Mac OS Keychain Access
 
